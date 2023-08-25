@@ -1,4 +1,4 @@
-# ResearchM4 Clone 
+# Landing Page
 
 Design a web page  by using HTML and CSS<br>
 It's not a responsive web page.
