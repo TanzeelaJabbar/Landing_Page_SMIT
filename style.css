@@ -1,0 +1,174 @@
+ *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Work Sans", arial, sans-serif;
+    /* overflow-x: hidden; */
+}
+body{
+    overflow-x: hidden;
+}
+.main{
+    width: 100vw;
+    height: 100vh;
+    background: url(https://preview.colorlib.com/theme/atomic/images/slider-1.jpg.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+ header {
+    position: fixed;
+    width: 100vw;
+    height: 70px;
+    top: 0;
+    right: 0;
+    display: fixed;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background:#e9e8e6;
+    padding: 23px 15%;
+}
+/* Logo */
+.logo {
+    font-size: 30px;
+    color: black;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+
+.navbar {
+    display: flex;
+}
+
+.navbar li {
+    list-style: none;
+}
+
+.navbar a {
+    color: grey;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 5px 10px;
+    margin: 2px 25px;
+}
+
+.navbar li:first-child a {
+    color: black; /* Set the color to black for the first link (Home) */
+}
+
+.home{
+    /* padding: 100px 15%; */
+    display: flex;
+    height: 100vh;
+}
+
+.header-content{
+    padding: 100px 15%;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+.header-content .left-header{
+    display: flex;
+    align-items: center;
+    position: relative;
+    /* margin-left: 0px; */
+    margin-bottom: 70px;
+}
+
+.home .content h1{
+    font-size: 50px;
+    margin-top: 150px;
+    font-weight: 100;
+    word-spacing: 5px;
+    line-height: 70px;
+    text-transform: capitalize;
+    color: black !important;
+}
+
+.content p{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+    color: #a8a7a5 !important;
+}
+
+.home button{
+    background: #008cfa;
+    color: white;
+    width: 40%;
+    font-size: 20px;
+    border: 1px solid;
+    height: 50px;
+}
+button:hover{
+    color: white;
+    background-color: #43a2eb;
+}
+
+
+.box{
+    width: 90%;
+    height: 250px;
+    background-color: white;
+    position: absolute;
+    top: 600px;
+    /* margin-left: auto;
+    margin-left: auto; */
+    margin-left: 70px;
+    /* margin-right: 20px; */
+    box-shadow: 5px 5px 5px #a8a7a5,
+    5px 5px 5px #a8a7a5;
+}
+.container{
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+/* ROW and COl PROPERTY - used in bootstrap */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6,
+.col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.col-md-4 h3{
+    padding: 5px;
+    font-size: 20px;
+    word-spacing: 5px;
+}
+
+.col-md-4 p{
+    padding: 5px;
+    font-size: 15px;
+    color:#a8a7a5;
+    word-spacing: 5px;
+}
+
+@media (min-width: 768px) {
+    .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5,
+    .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+        flex-basis: 0;
+        flex-grow: 1;
+        max-width: 100%;
+    }
+}
+
+.sub-box{
+    /* border: 1px solid black; */
+    padding: 10px;
+}
